@@ -1,0 +1,928 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Любимовская
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/owl.carousel.css')
+    link(rel='stylesheet', href='css/owl.theme.default.css')
+    link(rel='stylesheet', href='css/jquery.bxslider.css')
+    link(rel='stylesheet', href='css/jquery.fancybox.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+  body
+    .wrapper
+      .maincontent
+        header#headerMain.header
+          .container.container--header
+            .contacts
+              a.contacts__phone(href='tel:+79219427670') +7 (921) 942-7670
+              a.contacts__phone(href='tel:+79811443225') +7 (981) 144-3225
+              a.contacts__mail(href='mailto:lferma@yandex.ru') lferma@yandex.ru
+            .socials
+              span.socials__text Мы в соцсетях:
+              .socials__icons
+                a.socials__link.socials__link--fb(href='#')
+                a.socials__link.socials__link--vk(href='#')
+                a.socials__link.socials__link--inst(href='#')
+          .container
+            .header__fixed
+              .header__logo
+                .logo
+                  a.logo__link(href='#') Любимовская
+                .logo__descr
+                  span.logo__text База отдыха
+                  span.logo__text.logo__text--dot Эко ферма
+              .header__menu
+                nav.nav
+                  ul.nav__list
+                    li.nav__item
+                      a.nav__link(href='#aboutus') О нас
+                    li.nav__item
+                      a.nav__link(href='#photo') Фото
+                    li.nav__item
+                      a.nav__link(href='#prices') Цены
+                    li.nav__item
+                      a.nav__link(href='#booking') Бронирование
+                    li.nav__item
+                      a.nav__link(href='#where') Как нас найти
+                    li.nav__item
+                      a.nav__link(href='#karelia') О Карелии
+                    li.nav__item
+                      a.nav__link(href='#feeds') Отзывы
+                    li.nav__item
+                      a.nav__link(href='#contacts') Контакты
+        section.section.hero.parallax-window.parallax-window1
+          .container.container--hero
+            .hero__content
+              .hero__text-wrap
+                h1.main-title Коттеджи на Карельском перешейке на берегу озера от 2000 руб за сутки
+              .hero__form-wrap
+                form#sendform1.order-form(action='thanks.php', method='post')
+                  // Hidden Required Fields
+                  input(type='hidden', name='project_name', value='Любимовская')
+                  input(type='hidden', name='admin_email', value='katerina.savina@yahoo.com')
+                  input(type='hidden', name='form_subject', value='Бронь')
+                  // END Hidden Required Fields
+                  h2.second-title.second-title--form Забронировать
+                  input.order-form__input(type='text', name='name', placeholder='Ваше имя')
+                  input#phone.order-form__input(type='text', name='phone', placeholder='Контактный телефон')
+                  input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+                  .date-row
+                    label.order-form__label
+                      .label Дата заезда:
+                      input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                    label.order-form__label
+                      .label Дата выезда:
+                      input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                  .order-form__check
+                    // <label class="order-form__label-check">
+                    input#check.order-form__checkbox(type='checkbox', name='check', checked='')
+                    label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                    // </label>
+                  input.order-form__input.order-form__input--submit(type='submit', value='Отправить')
+              a.down-arrow(href='#variations')
+                img.down-arrow__img(src='img/down-arrow.png', alt='')
+        section#variations.section.variations
+          .container
+            h2.second-title
+              | Варианты размещения 
+              br
+              |                         в коттеджах
+            .tabs2
+              .tabs__caption
+                .var__tab.active.order-form__input.order-form__input--submit.order-form__input--banner 4 места 3 на 3
+                .var__tab.order-form__input.order-form__input--submit.order-form__input--banner 8 мест 4 на 4
+                .var__tab.order-form__input.order-form__input--submit.order-form__input--banner 8 мест 5 на 5
+              .tabs__content.active
+                .var__row
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-1.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-1.png', alt='')
+                    .var__button
+                      span.var__number 01
+                      input#go.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-2.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-2.png', alt='')
+                    .var__button
+                      span.var__number 02
+                      input#go2.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-3.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-3.png', alt='')
+                    .var__button
+                      span.var__number 03
+                      input#go3.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+              .tabs__content
+                .var__row
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-1.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-1.png', alt='')
+                    .var__button
+                      span.var__number 04
+                      input#go4.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-2.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-2.png', alt='')
+                    .var__button
+                      span.var__number 05
+                      input#go5.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-3.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-3.png', alt='')
+                    .var__button
+                      span.var__number 06
+                      input#go6.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+              .tabs__content
+                .var__row
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-1.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-1.png', alt='')
+                    .var__button
+                      span.var__number 07
+                      input#go7.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-2.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-2.png', alt='')
+                    .var__button
+                      span.var__number 08
+                      input#go8.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+                  .var__block
+                    .var__wrap
+                      img.var__img(src='img/var-3.jpg', alt='')
+                      span.menu__item-descr.menu__item-descr--var Family room
+                      p.var__text
+                        | For big families and parents
+                        | traveling with kids our vast, co
+                        | and home like family rooms
+                      span.price
+                        | от 
+                        strong 2000
+                        |  р
+                      img.humans(src='img/humans-3.png', alt='')
+                    .var__button
+                      span.var__number 09
+                      input#go9.order-form__input.order-form__input--submit.order-form__input--button.order-form__input--var(type='submit', value='Подробнее')
+        .banner.parallax-window.parallax-window2
+          .container
+            h3.third-title
+              | Весь Карельский перешеек 
+              br
+              |                         за 2 дня с ночевкой 
+              br
+              span.title-bold "все включено"
+            input#more.order-form__input.order-form__input--submit.order-form__input--banner(type='submit', value='Узнать подробнее')
+        section#aboutus.section.about
+          .container
+            h2.second-title.second-title--about О базе отдыха
+            .about__wrap
+              .about__text-wrap
+                p.about__text
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  | euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                  | accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                  | Cum sociis natoque penatibus et magnis dis parturient montes,
+                  | nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+                  | vulputate, felis tellus mollis orci, sed rhoncus sapien nunc get.Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                  | bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  | viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                  | natoque penatibus et magnis dis parturient montes, nascetur
+                  | ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                  | felis tellus mollis orci, sed rhoncus sapien nunc eget bibendum laor
+                  | eet. Proin gravida dolor sit amet lacus accumsan
+              .about__video-wrap
+                p.video-title Официальное видео с базы отдыха ЛЮБИМОВСКАЯ
+                .video
+                  img.video__img(src='img/ipad.png', alt='')
+                  iframe(width='345', height='260', src='https://www.youtube.com/embed/gmYUQeAkkFU', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+        #photo.slider-block
+          .slider
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-1.jpg')
+                img.slide__img(src='img/slide-1.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-2-xl.jpg')
+                img.slide__img(src='img/slide-2.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-3.jpg')
+                img.slide__img(src='img/slide-3.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-4.jpg')
+                img.slide__img(src='img/slide-4.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-5.jpg')
+                img.slide__img(src='img/slide-5.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-6.jpg')
+                img.slide__img(src='img/slide-6.jpg', alt='')
+            .slide
+              a.zoom(data-fancybox='gallery', href='img/slide-7.jpg')
+                img.slide__img(src='img/slide-7.jpg', alt='')
+        section.section.services
+          .container
+            h2.second-title Услуги
+            ul#tabs.services__list
+              li.services__item
+                a.services__link.services__link--1(href='', title='tab1') Русская баня
+              li.services__item
+                a.services__link.services__link--2(href='', title='tab2') ЭКО ферма
+              li.services__item
+                a.services__link.services__link--3(href='', title='tab3') Водные развлечения
+              li.services__item
+                a.services__link.services__link--4(href='', title='tab4') Зимние развлечения
+              li.services__item
+                a.services__link.services__link--5(href='', title='tab5') Спортивные игры
+              li.services__item
+                a.services__link.services__link--6(href='', title='tab6') Экскурсии
+              li.services__item
+                a.services__link.services__link--7(href='', title='tab7') Детские площадки
+            #content.tabs-content
+              li#tab1.services__item-descr
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                | labore magni nesciunt nisi nostrum odit quae quis suscipit ullam, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam asperiores commodi laborum maiores mollitia placeat repellat reprehenderit sapiente tempora.
+              li#tab2.services__item-descr
+                | Aliquid amet assumenda esse id ipsa magni molestiae nostrum numquam
+                | odio provident quia quis repellendus reprehenderit sint, sit tempora, veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aspernatur blanditiis commodi dignissimos
+              li#tab3.services__item-descr
+                | Ab amet asperiores cum cupiditate deserunt ea eligendi error, hic,
+                | minima nam obcaecati quasi quibusdam quis recusandae ullam voluptate, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi architecto dicta
+              li#tab4.services__item-descr
+                | Ad aperiam cumque cupiditate dolorem doloremque doloribus error eum
+                | exercitationem explicabo fugit harum, iste magni nemo neque possimus ratione suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error eum officiis quia?
+              li#tab5.services__item-descr
+                | Ea eaque quia rem soluta. Assumenda necessitatibus quam rem vel
+                | voluptas. Aliquam, aliquid doloribus illo maxime omnis quod repellat ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloremque, totam. Adipisci
+              li#tab6.services__item-descr
+                | Aliquam asperiores consectetur dolor, earum enim eum facere fugit
+                | laudantium, magni molestiae molestias neque nulla recusandae repellat vel, veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur dicta et eum itaque mollitia provident, recusandae vitae
+              li#tab7.services__item-descr
+                | Asperiores assumenda at culpa fuga, illum, impedit necessitatibus
+                | officiis optio quos temporibus ullam voluptatum. Dolore fuga nulla quos reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur ipsa minus?
+        section.section.menu.parallax-window.parallax-window3
+          .container
+            h2.second-title.second-title--about
+              | Подберите эко-меню 
+              br
+              |                         на свой вкус
+            .menu__list
+              .menu__item
+                span.menu__item-descr Восточная кухня
+                a.menu__link(href='') Скачать
+              .menu__item
+                span.menu__item-descr Русская кухня
+                a.menu__link(href='') Скачать
+              .menu__item
+                span.menu__item-descr 4х разовое питание
+                a.menu__link(href='') Скачать
+        section.section.faq
+          .container
+            h2.second-title.second-title--about Часто задаваемые вопросы
+            .tab-box
+              .tab-panels
+                #t1
+                  | Lorem ipsum dolor sit amet,
+                  | consectetur adipiscing elit.
+                  | Aenean euismod bibendum
+                  | laoreet. Proin gravida dolor sit
+                  | ametlacus accumsan et viverra
+                  | justo commodo. Proin sodales
+                  | pulvinar tempor. Cum socii s
+                  | natoque penatibus et magnis
+                  | disparturient montes, nascetur
+                  | ridiculus mus. Namermentum,
+                  | nulla luctus pharetra ulputate,
+                  | felis tellus mollis orci, sedrh
+                  | oncus sapien nunc eget.Lorem
+                  | ipsum dolor sit amet
+                #t2
+                  | Lorem ipsum dolor sit amet,
+                  | consectetur adipiscing elit.
+                  | Aenean euismod bibendum
+                  | laoreet. Proin gravida dolor sit
+                  | ametlacus accumsan et viverra
+                  | justo commodo. Proin sodales
+                  | pulvinar tempor. Cum socii s
+                  | natoque penatibus et magnis
+                  | disparturient montes, nascetur
+                  | ridiculus mus. Namermentum,
+                  | nulla luctus pharetra ulputate,
+                  | felis tellus mollis orci, sedrh
+                  | oncus sapien nunc eget.Lorem
+                  | ipsum dolor sit amet2
+                #t3
+                  | Lorem ipsum dolor sit amet,
+                  | consectetur adipiscing elit.
+                  | Aenean euismod bibendum
+                  | laoreet. Proin gravida dolor sit
+                  | ametlacus accumsan et viverra
+                  | justo commodo. Proin sodales
+                  | pulvinar tempor. Cum socii s
+                  | natoque penatibus et magnis
+                  | disparturient montes, nascetur
+                  | ridiculus mus. Namermentum,
+                  | nulla luctus pharetra ulputate,
+                  | felis tellus mollis orci, sedrh
+                  | oncus sapien nunc eget.Lorem
+                  | ipsum dolor sit amet3
+                #t4
+                  | Lorem ipsum dolor sit amet,
+                  | consectetur adipiscing elit.
+                  | Aenean euismod bibendum
+                  | laoreet. Proin gravida dolor sit
+                  | ametlacus accumsan et viverra
+                  | justo commodo. Proin sodales
+                  | pulvinar tempor. Cum socii s
+                  | natoque penatibus et magnis
+                  | disparturient montes, nascetur
+                  | ridiculus mus. Namermentum,
+                  | nulla luctus pharetra ulputate,
+                  | felis tellus mollis orci, sedrh
+                  | oncus sapien nunc eget.Lorem
+                  | ipsum dolor sit amet4
+                #t5
+                  | Lorem ipsum dolor sit amet,
+                  | consectetur adipiscing elit.
+                  | Aenean euismod bibendum
+                  | laoreet. Proin gravida dolor sit
+                  | ametlacus accumsan et viverra
+                  | justo commodo. Proin sodales
+                  | pulvinar tempor. Cum socii s
+                  | natoque penatibus et magnis
+                  | disparturient montes, nascetur
+                  | ridiculus mus. Namermentum,
+                  | nulla luctus pharetra ulputate,
+                  | felis tellus mollis orci, sedrh
+                  | oncus sapien nunc eget.Lorem
+                  | ipsum dolor sit amet5
+              ul.tab-nav
+                li
+                  a(href='#t1') Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                li
+                  a(href='#t2') Lorem ipsum dolor sit amet, consectetur adipiscing elit?2
+                li
+                  a(href='#t3') Lorem ipsum dolor sit amet, consectetur adipiscing elit?3
+                li
+                  a(href='#t4') Lorem ipsum dolor sit amet, consectetur adipiscing elit?4
+                li
+                  a(href='#t5') Lorem ipsum dolor sit amet, consectetur adipiscing elit?5
+        section.section.bonus
+          .container
+            h2.second-title.second-title--about Бонусы для вас
+            .owl-carousel
+              .owl__item
+                img.owl__img(src='img/bonus-1.jpg', alt='')
+                h4.fourth-title Заголовок темы
+                p.owl__descr
+                  | Lorem ipsum dolor sit amet, cons ectetur adipiscing
+                  | elit. Aenean euis mod bibendum laoreet. Proin grav
+                  | dolor sit amet, cons ectetur adipiscing
+              .owl__item
+                img.owl__img(src='img/bonus-2.jpg', alt='')
+                h4.fourth-title Заголовок темы
+                p.owl__descr
+                  | Lorem ipsum dolor sit amet, cons ectetur adipiscing
+                  | elit. Aenean euis mod bibendum laoreet. Proin grav
+                  | dolor sit amet, cons ectetur adipiscing
+              .owl__item
+                img.owl__img(src='img/bonus-1.jpg', alt='')
+                h4.fourth-title Заголовок темы
+                p.owl__descr
+                  | Lorem ipsum dolor sit amet, cons ectetur adipiscing
+                  | elit. Aenean euis mod bibendum laoreet. Proin grav
+                  | dolor sit amet, cons ectetur adipiscing
+              .owl__item
+                img.owl__img(src='img/bonus-1.jpg', alt='')
+                h4.fourth-title Заголовок темы
+                p.owl__descr
+                  | Lorem ipsum dolor sit amet, cons ectetur adipiscing
+                  | elit. Aenean euis mod bibendum laoreet. Proin grav
+                  | dolor sit amet, cons ectetur adipiscing
+              .owl__item
+                img.owl__img(src='img/bonus-1.jpg', alt='')
+                h4.fourth-title Заголовок темы
+                p.owl__descr
+                  | Lorem ipsum dolor sit amet, cons ectetur adipiscing
+                  | elit. Aenean euis mod bibendum laoreet. Proin grav
+                  | dolor sit amet, cons ectetur adipiscing
+            .map
+              img.map__img(src='img/map.jpg', alt='')
+              .up-button
+                a.up(href='#headerMain')
+        // modal var
+        #modal_form.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+              .slider-for
+                div
+                  img(src='img/slick-1.jpg', alt='')
+                div
+                  img(src='img/slick-1.jpg', alt='')
+                div
+                  img(src='img/slick-1.jpg', alt='')
+              .slider-nav
+                div
+                  img(src='img/slick-1-sm.jpg', alt='')
+                div
+                  img(src='img/slick-2-sm.jpg', alt='')
+                div
+                  img(src='img/slick-1-sm.jpg', alt='')
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 2
+        #modal_form2.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 3
+        #modal_form3.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 4
+        #modal_form4.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 5
+        #modal_form5.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 6
+        #modal_form6.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 7
+        #modal_form7.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 8
+        #modal_form8.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var 9
+        #modal_form9.modal-var.modal_form
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr
+            .slider-var
+            .modal__text-wrap
+              h2.second-title.second-title--about.second-title--modal Family room
+              p.modal__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                | amet lacus accumsan et viverra justo commodo. Proin
+                | sodales pulvinar tempor. Cum sociis natoque penatibus et
+                | magnis dis parturient montes, nascetur ridiculus mus.
+                | Nam fermentum, nulla luctus pharetra vulputate, felis
+                | tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                | ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                | euismod bibendum laoreet. Proin gravida dolor sit amet
+                | lacus accumsan et viverra justo commodo. Proin sodales
+                | pulvinar tempor. Cum sociis natoque penatibus et magni
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Accusamus, ad cumque cupiditate dolorem eaque eligendi eos,
+                | illo iste libero neque nobis non odio pariatur placeat,
+                | possimus sed velit voluptatibus voluptatum?
+          .modal__form
+            form.order-form.order-form--modal(action='thanks.php', method='post')
+              .modal__form-row
+                input.order-form__input.order-form__input--modal(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal(type='text', name='phone', placeholder='Контактный телефон')
+                input.order-form__input(type='text', name='guests', placeholder='Количество гостей')
+              .date-row
+                label.order-form__label.order-form__input--modal
+                  .label Дата заезда:
+                  input#date.order-form__input.order-form__input--date(name='depart-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                label.order-form__label.order-form__input--modal
+                  .label Дата выезда:
+                  input#input.order-form__input.order-form__input--date(name='return-date', type='text', onfocus="(this.type='date')", placeholder='дд.мм.гг')
+                .order-form__check.order-form__check--modal
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal(type='submit', value='Заказать')
+        // end modal var
+        // modal var more
+        #modal_form10.modal-var.modal_form.modal_form--more
+          img#modal_close.modal_close(src='img/close.png')
+          .modal__descr.modal__descr--more
+            h2.second-title.second-title--about.second-title--more Заголовок
+            .modal__form.modal__form--more
+              form.order-form.order-form--modal.order-form--more(action='thanks.php', method='post')
+                input.order-form__input.order-form__input--modal.order-form__input--more(type='text', name='name', placeholder='Ваше имя')
+                input#phone.order-form__input.order-form__input--modal.order-form__input--more(type='text', name='phone', placeholder='Контактный телефон')
+                textarea.order-form__input.order-form__input--more.order-form__input--textarea(type='textarea', name='guests', placeholder='Комментарий')
+                .order-form__check.order-form__check--modal.order-form__check--more
+                  input#check.order-form__checkbox.order-form__checkbox--modal(type='checkbox', name='check', checked='')
+                  label.order-form__text.label-checkbox(for='check') Даю согласие на обработку персональных данных
+                input.order-form__input.order-form__input--submit.order-form__input--submit-modal.order-form__input--submit-more(type='submit', value='Отправить')
+        // end modal var
+        #overlay
+        // Пoдлoжкa
+        footer#contacts.footer
+          .container.container--footer
+            .header__logo.header__logo--footer
+              .logo
+                a.logo__link.logo__link--footer(href='#') Любимовская
+              .logo__descr.logo__descr--footer
+                span.logo__text База отдыха
+                span.logo__text.logo__text--dot Эко ферма
+            .socials.socials--footer
+              span.socials__text.socials__text--footer Мы в соцсетях:
+              .socials__icons.socials__icons--footer
+                a.socials__link.socials__link--footer.socials__link--fb(href='#')
+                a.socials__link.socials__link--footer.socials__link--vk(href='#')
+                a.socials__link.socials__link--footer.socials__link--inst(href='#')
+            .contacts.contacts--footer
+              a.contacts__phone(href='tel:+79219427670') +7 (921) 942-7670
+              a.contacts__phone(href='tel:+79811443225') +7 (981) 144-3225
+          .container.container--header.container--footer-conf
+            .conf
+              a.conf__link(href='') Политика конфиденциальности
+            .contacts.contacts--footer-mail
+              a.contacts__mail(href='mailto:lferma@yandex.ru') lferma@yandex.ru
+          .container.container--footer.container--footer-trade
+            .trade © 2018. «База отдыха ЛЮБИМОВСКАЯ»
+            .author
+              | Разработка, поддержка и продвижение сайтов 
+              a.author__link(href='#') Silver Duck
+    script(src='js/jquery-3.2.1.min.js')
+    script(src='js/jquery.maskedinput.min.js')
+    script(src='js/owl.carousel.js')
+    script(src='js/jquery.bxslider.js')
+    script(src='js/jquery.fancybox.js')
+    script(src='js/parallax.min.js')
+    script(type='text/javascript', src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/common.js')
