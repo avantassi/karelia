@@ -54,7 +54,7 @@ return gulp.src(path.pugBuild)
     .pipe(gulp.dest(''))
 });
 
-gulp.task('all', ['css', 'js', 'html']);
+gulp.task('all', ['css',/* 'js', */'html']);
 
 // Gulp watch
 gulp.task('watch', function () {
