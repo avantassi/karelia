@@ -1,0 +1,17 @@
+.banner{
+  //background: url(../img/banner-bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.title-bold{
+  font-size: 48px;
+  color: #fff;
+  font-family: 'montserratsemibold';
+
+  @include phones{
+    font-size: 32px;
+  }
+}

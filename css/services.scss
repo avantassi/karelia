@@ -1,0 +1,297 @@
+.services{
+  background-color: #178fd6;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  @include phones{
+    padding-top: 20px;
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include phones{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item{
+    width: 25%;
+    text-align: center;
+    margin-top: 145px;
+
+    @include phones{
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__link{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'montserratsemibold';
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__item-descr{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'montserratregular';
+    line-height: 26px;
+  }
+}
+
+.tabs-content {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.tabs-content li {
+  width: 90%;
+  list-style: none;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.services__link--1:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-1.png);
+  width: 72px;
+  height: 78px;
+  bottom: 45px;
+  left: 30%;
+}
+
+.services__link--2:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-2.png);
+  width: 78px;
+  height: 78px;
+  bottom: 45px;
+  left: 20%;
+}
+
+.services__link--3:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-3.png);
+  width: 92px;
+  height: 80px;
+  bottom: 45px;
+  left: 27%;
+
+  @include tablets{
+    bottom: 67px;
+    left: -2%;
+  }
+}
+
+.services__link--4:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-4.png);
+  width: 78px;
+  height: 74px;
+  bottom: 45px;
+  left: 30%;
+
+  @include tablets{
+    bottom: 67px;
+    left: 3%;
+  }
+}
+
+.services__link--5:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-5.png);
+  width: 76px;
+  height: 75px;
+  bottom: 45px;
+  left: 32%;
+
+  @include tablets{
+    bottom: 70px;
+  }
+}
+
+.services__link--6:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-6.png);
+  width: 78px;
+  height: 75px;
+  bottom: 45px;
+  left: 16%;
+}
+
+.services__link--7:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/serv-7.png);
+  width: 78px;
+  height: 78px;
+  bottom: 45px;
+  left: 30%;
+
+  @include tablets{
+    bottom: 70px;
+    left: 6%;
+  }
+}
+
+.services__link:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/circle.png);
+  width: 128px;
+  height: 128px;
+  opacity: 0;
+}
+
+.services__item#current .services__link {
+  color: #fed322;
+}
+
+.services__item#current .services__link:before {
+  bottom: 57px;
+}
+
+.services__item#current .services__link--3:before {
+  bottom: 80px;
+}
+
+.services__item#current .services__link--4:before {
+  bottom: 80px;
+  left: 3%;
+}
+
+.services__item#current .services__link--5:before {
+  bottom: 85px;
+}
+
+.services__item#current .services__link--7:before {
+  bottom: 85px;
+  left: 6%;
+}
+
+.services__item#current .services__link--1:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 7%;
+}
+
+.services__item#current .services__link--1:before {
+  background-image: url(../img/serv-1-hover.png);
+}
+
+.services__item#current .services__link--2:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 0%;
+}
+
+.services__item#current .services__link--2:before {
+  background-image: url(../img/serv-2-hover.png);
+}
+
+.services__item#current .services__link--3:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 19%;
+
+  @include tablets{
+    bottom: 53px;
+    left: -16%;
+  }
+}
+
+.services__item#current .services__link--3:before {
+  background-image: url(../img/serv-3-hover.png);
+}
+
+.services__item#current .services__link--4:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 19%;
+
+  @include tablets{
+    bottom: 53px;
+    left: -20%;
+  }
+}
+
+.services__item#current .services__link--4:before {
+  background-image: url(../img/serv-4-hover.png);
+}
+
+.services__item#current .services__link--5:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 17%;
+
+  @include tablets{
+    bottom: 60px;
+    left: 6%;
+  }
+}
+
+.services__item#current .services__link--5:before {
+  background-image: url(../img/serv-5-hover.png);
+}
+
+.services__item#current .services__link--6:after {
+  opacity: 1;
+  bottom: 30px;
+  left: -6%;
+}
+
+.services__item#current .services__link--6:before {
+  background-image: url(../img/serv-6-hover.png);
+}
+
+.services__item#current .services__link--7:after {
+  opacity: 1;
+  bottom: 30px;
+  left: 17%;
+
+  @include tablets{
+    bottom: 60px;
+    left: -18%;
+  }
+}
+
+.services__item#current .services__link--7:before {
+  background-image: url(../img/serv-7-hover.png);
+}
+
+.services__link:before{
+
+  @include phones{
+    display: none;
+  }
+}
+
+.services__link:after{
+
+  @include phones{
+    display: none;
+  }
+}

@@ -1,0 +1,174 @@
+.footer{
+  background: url(../img/footer-bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include phones{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.container--footer{
+  display: flex;
+  justify-content: space-between;
+
+  @include phones{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__logo--footer{
+  width: 33%;
+  text-align: left;
+  margin-top: -10px;
+
+  @include phones{
+    width: 95%;
+    text-align: center;
+  }
+}
+
+.logo__descr--footer{
+  margin-left: 25px;
+
+  @include tablets{
+    margin-left: 22px;
+  }
+
+  @include phones{
+    margin-left: 0;
+  }
+}
+
+.logo__link--footer:after{
+
+  @include tablets{
+    right: -15px;
+  }
+
+  @include phones{
+    right: -5px;
+  }
+}
+
+.socials--footer{
+  width: 33%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  @include tablets{
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  @include phones{
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+.socials__icons--footer{
+
+  @include phones{
+    margin-top: -10px;
+  }
+}
+
+.socials__text--footer{
+  margin-right: 0;
+}
+
+.socials__link--footer{
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.contacts--footer{
+  width: 33%;
+  flex-direction: column;
+  text-align: right;
+
+  @include phones{
+    width: 100%;
+  }
+}
+
+.contacts--footer-mail{
+  width: 5%;
+
+  @include tablets{
+    width: 23%;
+  }
+}
+
+.conf{
+  width: 74%;
+
+  @include phones{
+    width: auto;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'montserratregular';
+  }
+}
+
+.trade{
+  padding-top: 25px;
+  font-size: 14px;
+  font-family: 'montserratregular';
+  color: #fff;
+  width: 50%;
+
+  @include phones{
+    padding-top: 15px;
+  }
+}
+
+.author{
+  padding-top: 25px;
+  font-size: 14px;
+  font-family: 'montserratregular';
+  color: #fff;
+  width: 50%;
+  text-align: right;
+
+  @include tablets{
+    font-size: 11px;
+  }
+
+  @include phones{
+    padding-top: 15px;
+  }
+
+  &__link{
+    font-size: 14px;
+    font-family: 'montserratregular';
+    color: #fff;
+  }
+}
+
+.container--footer-conf{
+
+  @include tablets{
+    flex-direction: row;
+  }
+
+  @include phones{
+    flex-direction: column;
+  }
+}
+
+.container--footer-trade{
+  flex-direction: row;
+}

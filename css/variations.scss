@@ -1,0 +1,150 @@
+.variations{
+  background: url(../img/variations-bg.png) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 1150px;
+  margin-top: -295px;
+  padding-top: 280px;
+  padding-bottom: 60px;
+}
+
+.var__tab{
+  width: 250px;
+  margin-left: 12px;
+  margin-right: 12px;
+  line-height: 47px;
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+.var__row{
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.var__wrap{
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.var__block{
+  background-color: #fff;
+  padding: 25px;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 300px;
+  position: relative;
+}
+
+.var__img{
+  margin-bottom: 30px;
+}
+
+.menu__item-descr--var{
+  position: relative;
+  margin-bottom: 45px;
+  display: block;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/wave-sm.png);
+    width: 94px;
+    height: 4px;
+    bottom: -20px;
+    left: 31%;
+  }
+}
+
+.var__text{
+  font-size: 16px;
+  color: #373830;
+  font-family: 'montserratlight';
+  line-height: 24px;
+  text-align: left;
+}
+
+.var__button{
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #373830;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs2{
+  margin-top: 75px;
+}
+
+.tabs__caption{
+  display: flex;
+  justify-content: center;
+}
+
+.var__number{
+  color: #a09a94;
+  font-size: 36px;
+  font-family: 'montserratsemibold';
+  margin-right: 35px;
+}
+
+.order-form__input--var{
+  width: 175px;
+  color: #a09a94;
+  border: 2px solid #a09a94;
+  height: 40px;
+
+  &:hover{
+    color: #373830;
+  }
+}
+
+.price{
+  font-size: 24px;
+  color: #373830;
+  font-family: 'montserratregular';
+  position: absolute;
+  left: -50px;
+  background-color: #fed322;
+  padding: 5px 10px;
+  bottom: -60px;
+}
+
+.price strong{
+  font-family: 'montserratsemibold';
+}
+
+.humans{
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+}
+
+//.slick-prev .slick-arrow{
+//  position: absolute !important;
+//  width: 30px;
+//  height: 30px;
+//  border: none;
+//  text-indent: -9999px;
+//  background-color: #2e2e2e;
+//  z-index: 10;
+//  top: 45%;
+//  left: -15px;
+//}
+//
+//.slick-next .slick-arrow{
+//  position: absolute !important;
+//}

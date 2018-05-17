@@ -1,0 +1,143 @@
+*{box-sizing: border-box;}
+
+html{
+  font-size: 16px;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: 'montserratmedium';
+  color: #2c375a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {list-style: none;}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1150px;
+
+  &:after{
+    content: "";
+    display: table;
+  }
+
+  &:after{
+    clear: both;
+  }
+
+  @include tablets{
+    width: 95%;
+  }
+}
+
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main-title{
+  font-size: 50px;
+  color: #fff;
+  line-height: 73px;
+
+  @include tablets{
+    font-size: 44px;
+    line-height: 66px;
+  }
+
+  @include phones{
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+.second-title{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'montserratmedium';
+  text-align: center;
+  
+  &--form{
+    font-size: 24px;
+    color: #373830;
+    padding-bottom: 50px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url(../img/wave.png);
+      width: 84px;
+      height: 4px;
+      bottom: 25px;
+      left: 110px;
+
+      @include phones{
+        left: 82px;
+      }
+    }
+  }
+  
+  &--about{
+    color: #2e2e2e;
+    padding-bottom: 50px;
+
+    @include tablets{
+      padding-bottom: 10px;
+    }
+  }
+  
+  &--modal{
+    text-align: left;
+    padding-bottom: 30px;
+  }
+
+  &--more{
+    margin: 0 auto;
+  }
+}
+
+.third-title{
+  font-size: 48px;
+  color: #fff;
+  font-family: 'montserratmedium';
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include phones{
+    font-size: 26px;
+  }
+}
+
+.fourth-title{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'montserratsemibold';
+  color: #2e2e2e;
+  padding-top: 30px;
+}

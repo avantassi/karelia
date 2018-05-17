@@ -1,0 +1,64 @@
+.hero{
+  //background: url(../img/hero-bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 60px;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include phones{
+      flex-direction: column;
+    }
+  }
+
+  &__text-wrap{
+    width: 65%;
+    padding-top: 100px;
+
+    @include tablets{
+      padding-top: 55px;
+    }
+
+    @include phones{
+      text-align: center;
+      padding-top: 20px;
+      width: 100%;
+    }
+  }
+
+  &__form-wrap{
+    width: 30%;
+
+    @include tablets{
+      width: 49%;
+    }
+
+    @include phones{
+      width: 100%;
+    }
+  }
+}
+
+.down-arrow{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  @include phones{
+    display: none;
+  }
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+
+
+
+

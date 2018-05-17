@@ -1,0 +1,137 @@
+.faq{
+  background: url(../img/faq-bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+  @include tablets{
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.tab-box{
+  display: flex;
+  justify-content: space-between;
+
+  @include phones{
+    flex-direction: column-reverse;
+  }
+}
+
+.tab-panels{
+  width: 25%;
+
+  @include tablets{
+    width: 35%;
+  }
+
+  @include phones{
+    width: 95%;
+    text-align: center;
+  }
+}
+
+.tab-panels div{
+  color: #373830;
+  font-size: 16px;
+  font-family: 'montserratlight';
+  line-height: 26px;
+  margin-top: 20px;
+
+  @include tablets{
+    margin-top: 0;
+  }
+
+  @include phones{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.tab-nav{
+  width: 65%;
+
+  @include tablets{
+    width: 60%;
+  }
+
+  @include phones{
+    width: 95%;
+  }
+}
+
+.tab-nav li{
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 25px;
+
+  @include phones{
+    margin-bottom: 5px;
+  }
+}
+
+.tab-nav li a{
+  color: #2e2e2e;
+  display: block;
+  padding: 25px;
+  font-family: 'montserratmedium';
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+
+  @include tablets{
+    font-size: 12px;
+  }
+
+  @include phones{
+    padding: 10px;
+    padding-right: 31px;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/faq.jpg);
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    @include tablets{
+      bottom: 20px;
+    }
+
+    @include phones{
+      bottom: 14px;
+      right: 10px;
+    }
+  }
+}
+
+.tab-nav li.select a{
+  background-color: #178fd6;
+  color: #fff;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/faq--hover.jpg);
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    @include tablets{
+      bottom: 20px;
+    }
+
+    @include phones{
+      bottom: 14px;
+      right: 10px;
+    }
+  }
+}
